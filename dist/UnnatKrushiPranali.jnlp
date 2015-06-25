@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="UnnatKrushiPranali.jnlp">
+  <information>
+    <title>UnnatKrushiPranali</title>
+    <vendor>harshbitss</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <jfx:javafx-runtime version="2.2+" href="http://javadl.sun.com/webapps/download/GetFile/javafx-latest/windows-i586/javafx2.jnlp"/>
+  </resources>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="UnnatKrushiPranali.jar" size="6326065" download="eager" />
+    <jar href="lib/RXTXcomm.jar" size="66614" download="eager" />
+    <jar href="lib/derby.jar" size="2783504" download="eager" />
+    <jar href="lib/derbyclient.jar" size="553834" download="eager" />
+    <jar href="lib/derbynet.jar" size="245215" download="eager" />
+    <jar href="lib/eclipselink.jar" size="8865768" download="eager" />
+    <jar href="lib/javafx-dialogs-0.0.1.jar" size="122520" download="eager" />
+    <jar href="lib/javax.persistence_2.1.0.v201304241213.jar" size="185024" download="eager" />
+    <jar href="lib/mysql-connector-java-5.1.23-bin.jar" size="860478" download="eager" />
+    <jar href="lib/org.eclipse.persistence.jpa.jpql_2.5.1.v20130918-f2b9fc5.jar" size="1443563" download="eager" />
+    <jar href="lib/schudt-javafx-datepicker-0.0.2.jar" size="72593" download="eager" />
+    <jar href="lib/xmlpull-1.1.3.1.jar" size="8946" download="eager" />
+    <jar href="lib/xpp3_min-1.1.4c.jar" size="26858" download="eager" />
+    <jar href="lib/xstream-1.4.3.jar" size="526063" download="eager" />
+  </resources>
+<security>
+  <all-permissions/>
+</security>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="UnnatKrushiPranali" >
+    <param name="requiredFXVersion" value="2.2+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="unnatkrushipranali.UnnatKrushiPranali"  name="UnnatKrushiPranali" />
+  <update check="always"/>
+</jnlp>

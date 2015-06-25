@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="394.0" prefHeight="402.0" prefWidth="415.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml" fx:controller="unnatkrushipranali.NewFarmerWindowController">
+  <children>
+    <TabPane prefHeight="324.0" prefWidth="415.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <tabs>
+        <Tab text="General ">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="376.0" prefWidth="415.0">
+              <children>
+                <Label layoutX="61.0" layoutY="28.0" text="Title">
+                  <font>
+                    <Font size="14.0" fx:id="x1" />
+                  </font>
+                </Label>
+                <ComboBox fx:id="titleCombo" layoutX="163.0" layoutY="23.0">
+                  <items>
+                    <FXCollections fx:factory="observableArrayList">
+                      <String fx:value="Item 1" />
+                      <String fx:value="Item 2" />
+                      <String fx:value="Item 3" />
+                    </FXCollections>
+                  </items>
+                </ComboBox>
+                <Label font="$x1" layoutX="61.0" layoutY="65.0" text="First Name" />
+                <TextField fx:id="firstNameField" layoutX="163.0" layoutY="61.0" prefWidth="200.0" />
+                <Label font="$x1" layoutX="61.0" layoutY="104.0" text="Middle Name" />
+                <TextField fx:id="middleNameField" layoutX="163.0" layoutY="100.0" prefWidth="200.0" />
+                <Label font="$x1" layoutX="61.0" layoutY="144.0" text="Last Name" />
+                <TextField fx:id="lastNameField" layoutX="163.0" layoutY="140.0" prefWidth="200.0" />
+                <Label font="$x1" layoutX="61.0" layoutY="183.0" text="Birth Day" />
+                <TextField fx:id="birthdayField" layoutX="163.0" layoutY="179.0" prefWidth="200.0" />
+                <Label font="$x1" layoutX="61.0" layoutY="226.0" text="Phone No" />
+                <TextField fx:id="phoneNoField" layoutX="163.0" layoutY="222.0" prefWidth="200.0" />
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab text="Address">
+          <content>
+            <AnchorPane id="Content" prefHeight="428.0" prefWidth="450.0">
+              <children>
+                <Label font="$x1" layoutX="55.0" layoutY="31.0" text="Street 1" />
+                <TextField fx:id="street1Field" layoutX="157.0" layoutY="27.0" prefWidth="200.0" />
+                <Label font="$x1" layoutX="55.0" layoutY="70.0" text="Street 2" />
+                <TextField fx:id="street2Field" layoutX="157.0" layoutY="66.0" prefWidth="200.0" />
+                <Label font="$x1" layoutX="55.0" layoutY="110.0" text="City/Town" />
+                <TextField fx:id="cityField" layoutX="157.0" layoutY="106.0" prefWidth="200.0" />
+                <Label font="$x1" layoutX="55.0" layoutY="149.0" text="State/Provision" />
+                <TextField fx:id="stateField" layoutX="157.0" layoutY="145.0" prefWidth="200.0" />
+                <Label font="$x1" layoutX="55.0" layoutY="192.0" text="Pin/Zip Code" />
+                <TextField fx:id="postalField" layoutX="157.0" layoutY="188.0" prefWidth="200.0" />
+                <Label font="$x1" layoutX="55.0" layoutY="235.0" text="Country" />
+                <TextField fx:id="countryCode" layoutX="157.0" layoutY="231.0" prefWidth="200.0" />
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab text="Photo">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="415.0" prefWidth="450.0">
+              <children>
+                <HBox id="HBox" alignment="CENTER" layoutX="21.0" layoutY="246.0" prefWidth="200.0" spacing="5.0">
+                  <children>
+                    <Button fx:id="addPhotoButton" mnemonicParsing="false" onAction="#addPhotoEvent" prefHeight="31.0" prefWidth="97.0" text="Add Photo">
+                      <HBox.margin>
+                        <Insets />
+                      </HBox.margin>
+                    </Button>
+                    <Button mnemonicParsing="false" onAction="#handleCancel" prefHeight="31.0" prefWidth="97.00009999999747" text="Change Photo" />
+                  </children>
+                </HBox>
+                <Pane layoutX="99.0" layoutY="27.0" prefHeight="200.0" prefWidth="204.0" />
+                <Label layoutX="21.0" layoutY="27.0" text="Image :" />
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+      </tabs>
+    </TabPane>
+    <HBox id="HBox" alignment="CENTER" layoutX="173.0" layoutY="349.0" prefWidth="200.0" spacing="5.0">
+      <children>
+        <Button mnemonicParsing="false" prefHeight="31.0" prefWidth="85.00009999999747" text="Add">
+          <HBox.margin>
+            <Insets />
+          </HBox.margin>
+        </Button>
+        <Button mnemonicParsing="false" onAction="#handleCancel" prefHeight="31.0" prefWidth="85.0" text="Cancel" />
+      </children>
+    </HBox>
+    <Separator prefWidth="450.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="324.0" />
+  </children>
+  <stylesheets>
+    <URL value="@newfarmerwindow.css" />
+  </stylesheets>
+</AnchorPane>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="235.0" prefWidth="360.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="unnatkrushipranali.controller.LanguageSelectionController">
+  <children>
+    <Group id="Group" layoutX="48.0" layoutY="88.0">
+      <children>
+        <Label layoutX="0.0" layoutY="0.0" prefHeight="21.000091552734375" text="Select Language :">
+          <font>
+            <Font name="System Bold" size="12.0" />
+          </font>
+        </Label>
+        <ComboBox fx:id="languageCombo" layoutX="116.0" layoutY="0.0" prefHeight="21.0" prefWidth="163.0">
+          <items>
+            <FXCollections fx:factory="observableArrayList">
+              <String fx:value="Item 1" />
+              <String fx:value="Item 2" />
+              <String fx:value="Item 3" />
+            </FXCollections>
+          </items>
+        </ComboBox>
+        <Button layoutX="39.0" layoutY="66.0" mnemonicParsing="false" onAction="#applyLanguage" prefWidth="187.0" text="Apply" />
+      </children>
+    </Group>
+    <MenuBar prefWidth="360.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <menus>
+        <Menu mnemonicParsing="false" text="Help">
+          <items>
+            <MenuItem mnemonicParsing="false" onAction="#handleAbout" text="About" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+  </children>
+</AnchorPane>

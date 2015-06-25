@@ -1,0 +1,182 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 13, 2014, 12:55:04 AM
+    Author     : harshbitss
+*/
+
+.background {
+   
+}
+
+.bar-chart .label{
+ 
+    -fx-text-fill: #ffffff;
+-fx-font-weight: bold;
+-fx-opacity: 1;
+-fx-font-size: 16pt;
+-fx-font-family: "Segoe UI Light";
+    
+    
+}
+.axis{
+    -fx-text-fill: #ffffff
+}
+
+
+
+.button1{
+    -fx-background-color: 
+        linear-gradient(#ffd65b, #e68400),
+        linear-gradient(#ffef84, #f2ba44),
+        linear-gradient(#ffea6a, #efaa22),
+        linear-gradient(#ffe657 0%, #f8c202 50%, #eea10b 100%),
+        linear-gradient(from 0% 0% to 15% 50%, rgba(255,255,255,0.9), rgba(255,255,255,0));
+    -fx-background-radius: 15;
+    -fx-background-insets: 0,1,2,3,0;
+    -fx-text-fill: #654b00;
+    -fx-font-weight: bold;
+    -fx-font-size: 12px;
+    -fx-padding: 10 15 10 15;
+}
+.button{
+    
+}
+ 
+  
+
+
+.button:hover {
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #a34313 0%, #903b12 100%),
+        #9d4024,
+        #d86e3a,
+        radial-gradient(center 50% 50%, radius 100%, #ea7f4b, #c54e2c);
+}
+
+.toggle-button{
+    
+    -fx-background-color: 
+        #ecebe9,
+        rgba(0,0,0,0.05),
+        linear-gradient(#dcca8a, #c7a740),
+        linear-gradient(#f9f2d6 0%, #f4e5bc 20%, #e6c75d 80%, #e2c045 100%),
+        linear-gradient(#f6ebbe, #e6c34d);
+    -fx-background-insets: 0,9 9 8 9,9,10,11;
+    -fx-background-radius: 50;
+    -fx-padding: 15 30 15 30;
+    -fx-font-family: "Helvetica";
+    -fx-font-size: 18px;
+    -fx-text-fill: #311c09;
+    -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.1) , 2, 0.0 , 0 , 1);
+}
+.toggle-button Text {
+    -fx-effect: dropshadow( one-pass-box , rgba(255,255,255,0.5) , 0, 0.0 , 0 , 1);
+}
+
+.toggle-button:selected{
+     -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #a34313 0%, #903b12 100%),
+        #9d4024,
+        #d86e3a,
+        radial-gradient(center 50% 50%, radius 100%, #ea7f4b, #c54e2c);
+    
+}
+
+.control-panel{
+    
+    -fx-background-image: url("controlpanel.jpg");
+    
+}
+
+
+
+
+.bar-anchor{
+    
+      -fx-background-image: url("texture.png");
+      
+ 
+   
+}
+
+.tree-view{
+    -fx-background-image: url("background.jpg");
+      -fx-background-color:#666666
+    
+}
+
+.scroll-pane{
+       
+}
+.current-status{
+    -fx-background-image: url("texture.png");
+}
+.weather-status{
+    -fx-background-image: url("weatherstatus1.png");
+    
+}
+.menu-bar{
+    
+  
+    -fx-background-image: url("top-bar.png");
+    -fx-background-size: cover;
+    -fx-background-position: left top;
+    -fx-background-repeat: no-repeat;
+}
+
+.middle-bar{
+    
+    -fx-border-image-source: url("mid-bar-right.png");
+    -fx-border-image-slice: 1 0 1 0 fill;
+    -fx-border-image-width: 1 0 1 0;
+    -fx-border-image-repeat: stretch;
+    -fx-padding: -1px 0px 0px 0px;
+    -fx-spacing: 0;
+}
+    
+
+
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-opacity: 0;
+}
+
+.tab-pane
+{
+    -fx-tab-min-width:43px;
+}
+
+.tab{
+    -fx-background-insets: 0 1 0 1,0,0;
+}
+.tab-pane .tab
+{
+    -fx-background-color: #e6e6e6;
+
+}
+
+.tab-pane .tab:selected
+{
+    -fx-background-color: #3c3c3c;
+}
+
+.tab .tab-label { 
+    -fx-alignment: CENTER;
+    -fx-text-fill: #828282;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+
+.tab:selected .tab-label { 
+    -fx-alignment: CENTER;
+    -fx-text-fill: #96b946;
+}
+
+.tab-pane:top *.tab-header-area {
+    -fx-background-insets: 0, 0 0 1 0;
+ /* -fx-padding: 0.416667em 0.166667em 0.0em 0.833em; /* 5 2 0 10 */
+    -fx-padding: 0.416667em 0.166667em 0.0em 0.0em; /* overriden as 5 2 0 0 */
+}

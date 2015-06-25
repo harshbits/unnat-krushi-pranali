@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="600.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml" fx:controller="unnatkrushipranali.MainWindowController">
+  <children>
+    <MenuBar prefHeight="27.0" prefWidth="800.0" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="0.0">
+      <menus>
+        <Menu mnemonicParsing="false" text="File">
+          <items>
+            <MenuItem mnemonicParsing="false" text="New Project           " />
+            <MenuItem mnemonicParsing="false" text="Open Project" />
+            <MenuItem mnemonicParsing="false" text="Backup Project" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Save" />
+            <MenuItem mnemonicParsing="false" text="Save As..." />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Print Setup" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Exit" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Add Resources">
+          <items>
+            <MenuItem mnemonicParsing="false" onAction="#newFarmerWindowOpen" text="Assign Farmer            " />
+            <MenuItem mnemonicParsing="false" text="New Farm" />
+            <MenuItem mnemonicParsing="false" onAction="#newFieldWindowOpen" text="New Field" />
+            <MenuItem mnemonicParsing="false" text="New Crop" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="New Worker" />
+            <MenuItem mnemonicParsing="false" text="New Client" />
+            <MenuItem mnemonicParsing="false" text="New Supply" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" onAction="#newSensorWindowOpen" text="New Sensor Node" />
+            <MenuItem mnemonicParsing="false" text="Replace Sensor Node" />
+            <MenuItem mnemonicParsing="false" onAction="#newClusterWindowOpen" text="New Cluster Node" />
+            <MenuItem mnemonicParsing="false" text="Replace Cluster Node" />
+            <MenuItem mnemonicParsing="false" text="New Valve" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="View">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Language Selection" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Edit">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Delete" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+          <items>
+            <MenuItem mnemonicParsing="false" text="About" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <SplitPane dividerPositions="0.23684210526315788" focusTraversable="true" prefHeight="549.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="51.0">
+      <items>
+        <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="-Infinity" minHeight="0.0" minWidth="0.0" prefHeight="547.0" prefWidth="186.0">
+          <children>
+            <VBox id="VBox" alignment="CENTER" layoutY="6.0" spacing="5.0">
+              <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Crop Projects" />
+                <TreeView fx:id="ukpTreeView" prefHeight="519.0" prefWidth="186.0" VBox.vgrow="ALWAYS">
+                  <root>
+                    <TreeItem value="Farmer" />
+                  </root>
+                </TreeView>
+              </children>
+            </VBox>
+          </children>
+        </AnchorPane>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+          <children>
+            <SplitPane dividerPositions="0.6275229357798165" focusTraversable="true" orientation="VERTICAL" prefHeight="547.0" prefWidth="606.0" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-1.0">
+              <items>
+                <AnchorPane maxHeight="-Infinity" minHeight="0.0" minWidth="0.0" prefHeight="430.0" prefWidth="160.0">
+                  <children>
+                    <SplitPane dividerPositions="0.6627906976744186" focusTraversable="true" prefHeight="346.0" prefWidth="610.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="0.0">
+                      <items>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                          <children>
+                            <TabPane prefHeight="344.0" prefWidth="402.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                              <tabs>
+                                <Tab text="Bar Chart">
+                                  <content>
+                                    <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                      <children>
+                                        <ScrollBar prefWidth="396.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                                        <BarChart prefHeight="266.0" prefWidth="383.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="13.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="26.0">
+                                          <xAxis>
+                                            <CategoryAxis fx:id="clusterAxis" prefHeight="27.0" prefWidth="316.0" side="BOTTOM">
+                                              <categories>
+                                                <FXCollections fx:factory="observableArrayList" />
+                                              </categories>
+                                            </CategoryAxis>
+                                          </xAxis>
+                                          <yAxis>
+                                            <NumberAxis prefHeight="212.0" prefWidth="37.0" side="LEFT" />
+                                          </yAxis>
+                                        </BarChart>
+                                        <Group id="Group" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="11.0">
+                                          <children>
+                                            <ComboBox layoutX="93.0" prefHeight="21.0" prefWidth="84.0">
+                                              <items>
+                                                <FXCollections fx:factory="observableArrayList">
+                                                  <String fx:value="Current" />
+                                                  <String fx:value="last 6 hours" />
+                                                  <String fx:value="last 12 hours" />
+                                                  <String fx:value="today" />
+                                                  <String fx:value="this week" />
+                                                </FXCollections>
+                                              </items>
+                                            </ComboBox>
+                                            <Label layoutY="3.0" text="Period Selection" />
+                                          </children>
+                                        </Group>
+                                        <Button layoutX="57.0" layoutY="11.0" mnemonicParsing="false" onAction="#refreshBarChart" text="Refresh" />
+                                      </children>
+                                    </AnchorPane>
+                                  </content>
+                                </Tab>
+                                <Tab text="Area Chart">
+                                  <content>
+                                    <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                  </content>
+                                </Tab>
+                                <Tab text="NDVI">
+                                  <content>
+                                    <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                  </content>
+                                </Tab>
+                                <Tab text="Solenoid Valve">
+                                  <content>
+                                    <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                      <children>
+                                        <Group id="Group" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0">
+                                          <children>
+                                            <ComboBox layoutX="122.0" prefHeight="21.0" prefWidth="99.0">
+                                              <items>
+                                                <FXCollections fx:factory="observableArrayList">
+                                                  <String fx:value="Item 1" />
+                                                  <String fx:value="Item 2" />
+                                                  <String fx:value="Item 3" />
+                                                </FXCollections>
+                                              </items>
+                                            </ComboBox>
+                                            <Label layoutY="3.0" prefWidth="186.0" text="Solenoid Volve Type :" />
+                                          </children>
+                                        </Group>
+                                      </children>
+                                    </AnchorPane>
+                                  </content>
+                                </Tab>
+                                <Tab text="Intelligent Assistance">
+                                  <content>
+                                    <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                  </content>
+                                </Tab>
+                              </tabs>
+                            </TabPane>
+                          </children>
+                        </AnchorPane>
+                        <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="200.0">
+                          <children>
+                            <ScrollPane prefHeight="344.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                              <content>
+                                <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="330.0" prefWidth="200.0">
+                                  <children>
+                                    <Group id="Group" layoutX="7.0" layoutY="50.0">
+                                      <children>
+                                        <ComboBox fx:id="portCombo" layoutX="95.0" prefHeight="31.0" prefWidth="88.0" />
+                                        <Button fx:id="connectPort" layoutX="4.0" layoutY="43.0" mnemonicParsing="false" onAction="#connectPort" prefHeight="34.0" prefWidth="82.0" text="Connect">
+                                          <tooltip>
+                                            <Tooltip text="Connect to the Serial Port" />
+                                          </tooltip>
+                                        </Button>
+                                        <Label layoutY="7.0" prefWidth="93.0" text="Field Connection" />
+                                        <Button layoutX="95.0" layoutY="42.0" mnemonicParsing="false" onAction="#disconnectPort" prefHeight="35.0" prefWidth="87.0" text="Disonnect">
+                                          <tooltip>
+                                            <Tooltip text="Disconnect The Serial Port" />
+                                          </tooltip>
+                                        </Button>
+                                      </children>
+                                    </Group>
+                                    <Label layoutX="50.0" layoutY="10.0" prefWidth="92.0" text="Control Panel">
+                                      <font>
+                                        <Font name="System Bold" size="14.0" fx:id="x1" />
+                                      </font>
+                                    </Label>
+                                    <Separator layoutY="39.0" prefWidth="200.0" />
+                                    <Separator layoutX="3.0" layoutY="165.0" prefWidth="200.0" />
+                                    <Separator layoutX="-4.0" layoutY="227.0" prefWidth="199.9998779296875" />
+                                    <ToggleButton layoutX="11.0" layoutY="191.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="179.0" text="Automatic" />
+                                    <Label fx:id="portStatus" layoutX="25.0" layoutY="128.0" prefHeight="26.999900000002526" prefWidth="136.0" textFill="#10cc00" />
+                                  </children>
+                                </AnchorPane>
+                              </content>
+                            </ScrollPane>
+                          </children>
+                        </AnchorPane>
+                      </items>
+                    </SplitPane>
+                  </children>
+                </AnchorPane>
+                <AnchorPane maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="604.0">
+                  <children>
+                    <TabPane prefHeight="170.0" prefWidth="604.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                      <tabs>
+                        <Tab text="Untitled Tab 1">
+                          <content>
+                            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                          </content>
+                        </Tab>
+                        <Tab text="Untitled Tab 2">
+                          <content>
+                            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                          </content>
+                        </Tab>
+                      </tabs>
+                    </TabPane>
+                    <Label font="$x1" layoutX="7.0" layoutY="7.0" prefWidth="136.0" text="Weather Conditions" />
+                  </children>
+                </AnchorPane>
+              </items>
+            </SplitPane>
+          </children>
+        </AnchorPane>
+      </items>
+    </SplitPane>
+  </children>
+</AnchorPane>
