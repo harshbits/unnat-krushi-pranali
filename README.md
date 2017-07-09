@@ -1,5 +1,10 @@
-# UnnatKrushiPranali
-An Advanced Farming System with Artificial Intelligence
+Unnat Krushi Pranali - An Advanced Farming System
+=================================================
+An Advanced Farming System using AI, NLP & Deep Learning, implemented in Spring Boot.
+
+* The Software is implemented for the [Multifunctional Gateway Sensor Node](http://ipindiaonline.gov.in/patentsearch/PublishedSearch/publishApplicationNumber.aspx?application_number=pr1Y1Z7w9lbawGkesMcUpA==) device, patented under Indian Jurisdiction. 
+* Software is mainly designed to help farmers to monitor and control the farms 24 * 7 from any part of the world.
+* It can also use in gardening (Home Automation) and Forest monitoring.
 
 Version Details:
 ----------------
