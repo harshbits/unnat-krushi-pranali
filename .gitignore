@@ -61,6 +61,7 @@ out
 atlassian-ide-plugin.xml
 
 # Eclipse specific files/directories
+.factorypath
 .classpath
 .project
 .settings
