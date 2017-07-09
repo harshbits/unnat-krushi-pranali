@@ -16,7 +16,7 @@ Version Details:
   * Use of Deep Learning and NLP
   * Advanced Messanging Services
   * Cloud Data Storage
-  * Client Server Implementation using gRPC
+  * Client Server Communication using gRPC
   * Integration with [project-u-bot](https://github.com/harshbits/project-u-bot) for smart gardening
 
 #### Previous Version: `1.0.0.RELEASE`
