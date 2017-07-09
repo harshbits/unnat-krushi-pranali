@@ -25,8 +25,8 @@ Version Details:
 Repository Structure		
 ---------------------
 * unnat-krushi-pranali (parent)
- * advanced-farming-client-ws (Client Project)
- * advanced-farming-server-ws (Server Project)
+  * advanced-farming-client-ws (Client Project)
+  * advanced-farming-server-ws (Server Project)
 
 References:
 --------------------------------
