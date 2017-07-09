@@ -22,6 +22,11 @@ Version Details:
 #### Previous Version: `1.0.0.RELEASE`
 * Code is in branch desktop-1.0.0.RELEASE
 
+Repository Structure		
+---------------------
+* unnat-krushi-pranali (parent)
+ * advanced-farming-client-ws (Client Project)
+ * advanced-farming-server-ws (Server Project)
 
 References:
 --------------------------------
