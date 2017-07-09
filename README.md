@@ -17,10 +17,10 @@ Version Details:
   * Advanced Messanging Services
   * Cloud Data Storage
   * Client Server Implementation using gRPC
+  * Integration with [project-u-bot](https://github.com/harshbits/project-u-bot) as gardening
 
 #### Previous Version: `1.0.0.RELEASE`
 * Code is in branch desktop-1.0.0.RELEASE
-
 
 
 References:
