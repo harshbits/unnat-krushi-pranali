@@ -6,22 +6,24 @@
 	<groupId>com.unnat.krushi</groupId>
 	<artifactId>unnat-krushi-pranali</artifactId>
 	<version>2.0.0-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<packaging>pom</packaging>
 
 	<name>unnat-krushi-pranali</name>
 	<description>Advanced and Intelligent Farming Agent</description>
 
 	<developers>
 		<developer>
+			<id>harshbits</id>
 			<name>Harsh Bhavsar</name>
 			<email>harshbhavsar2110@gmail.com</email>
 		</developer>
 	</developers>
+
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>1.5.4.RELEASE</version>
-		<relativePath /> <!-- lookup parent from repository -->
+		<relativePath />
 	</parent>
 
 	<properties>
@@ -31,17 +33,32 @@
 	</properties>
 
 	<dependencies>
+
+		<!-- GSON -->
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter</artifactId>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
 		</dependency>
 
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+			<version>21.0</version>
 		</dependency>
 	</dependencies>
+
+	<repositories>
+		<repository>
+			<id>snapshots-repo</id>
+			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
 
 	<build>
 		<plugins>
@@ -51,6 +68,4 @@
 			</plugin>
 		</plugins>
 	</build>
-
-
 </project>
